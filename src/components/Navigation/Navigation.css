@@ -1,0 +1,51 @@
+.nav-bar {
+  display: flex;
+  padding: 0 4%;
+  background-color: #ffff;
+  border-bottom: solid 1px #e8e8e8;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: sans-serif, "Montserrat";
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #0290ff;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #333333bf;
+}
+
+.nav ul li a:hover {
+  color: #0291ffd6;
+}
+
+.nav-link {
+  display: flex;
+  gap: 3rem;
+}
+
+.avatar-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatar-div a img {
+  width: 2rem;
+}
