@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -29,7 +30,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello-Microverse Project] <a name="about-project"></a>
+# 📖 [React Bookstore Project] <a name="about-project"></a>
 
 
 **[React Bookstore]** is a bookstore created using React front-end library
@@ -54,7 +55,12 @@
 - **[Initialize React app]** 
 - **[React Components]**
 
-<!-- GETTING STARTED -->
+
+
+### Live Demo <a name="live-demo"></a>
+
+- **[Live Demo](https://bookstore-react-app.onrender.com)**
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -80,7 +86,7 @@ Clone this repository to your desired folder:
   cd my-folder
   git clone https://github.com/fezzopro/react-bookstore.git
   cd react-bookstore
-  git checkout *name of the branch*
+  git checkout project-setup
 
 ```
 
