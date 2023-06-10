@@ -3,8 +3,7 @@ import booksFromStorage from './books';
 import Form from '../Form/Form';
 
 const Book = ({ books }) => {
-  const bookList = books.map((book) => { // eslint-disable-next-line
-    console.log({ ...books }); // eslint-disable-next-line
+  const bookList = books.map((book) => {
     const id = { ...book };
     return (
       <li key={id}>
