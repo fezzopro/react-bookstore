@@ -1,24 +1,23 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   books: [],
-}
+};
 
 export const bookSlice = createSlice({
-  name: 'book',
+  name: 'books',
   initialState,
   reducers: {
-    addBook: (state) => {
+    addBook: (state, { payload }) => {
       // For adding the book to the bookstore
+      state.books.push(payload.book);
     },
-    removeBook: (state) => {
+    removeBook: (state, { payload }) => ({
       // Remove the book from the bookstore
-    },
-    editBook: (state, action) => {
-      // Edit the book from the book store
-    },
+      books: state.books.filter((book) => book.id !== payload.id),
+    }),
   },
-})
+});
 
 // Action creators are generated for each case reducer function
 export const { addBook, removeBook, editBook } = bookSlice.actions;

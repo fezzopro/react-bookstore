@@ -1,26 +1,18 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  categories: [],
-}
+  categories: 'Category page Under Construction',
+};
 
 export const categorySlice = createSlice({
   name: 'category',
   initialState,
   reducers: {
-    addCategory: (state) => {
-      // For adding a new category to the bookstore categories
-    },
-    removeCategory: (state) => {
-      // Remove categpry from the bookstore categories
-    },
-    editCategory: (state, action) => {
-      // Edit category from the bookstore categories
-    },
+    status: () => initialState,
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const { addCategory, removeCategory, editCategory } = categorySlice.actions;
+export const { status } = categorySlice.actions;
 
 export default categorySlice.reducer;
