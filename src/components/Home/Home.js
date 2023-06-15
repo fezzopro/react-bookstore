@@ -22,7 +22,7 @@ const Home = () => {
       <div>
         <h2 className="form-title">ADD NEW BOOK</h2>
       </div>
-      <Form onChange />
+      <Form />
     </div>
   );
 };
