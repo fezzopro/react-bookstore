@@ -12,10 +12,10 @@ export const bookSlice = createSlice({
       // For adding the book to the bookstore
       state.books.push(payload.book);
     },
-    removeBook: (state, { payload }) => ({
+   removeBook: (state, { payload }) => {
       // Remove the book from the bookstore
-      books: state.books.filter((book) => book.id !== payload.id),
-    }),
+      state.books = state.books.filter((book) => book.id !== payload.id);
+    },
   },
 });
 
