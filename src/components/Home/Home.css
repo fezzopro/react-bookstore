@@ -174,3 +174,30 @@
   width: 100%;
   margin: 2.5rem 0 1.813rem;
 }
+
+.error {
+  display: flex;
+  justify-content: center;
+  color: brown;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading span {
+  height: 5rem;
+  background-image: url('../../images/loading-1.svg');
+  background-repeat: no-repeat;
+  width: 5rem;
+  animation: rotate 1s linear 0.5s infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

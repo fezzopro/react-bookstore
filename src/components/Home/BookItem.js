@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/books/booksSlice';
+import { deleteBook } from '../../redux/books/booksSlice';
 
 const BookItem = ({ book }) => {
   const {
@@ -15,10 +15,10 @@ const BookItem = ({ book }) => {
   const dispatch = useDispatch();
 
   const handleDelete = () => {
-    dispatch(removeBook({ itemId }));
+    dispatch(deleteBook(itemId));
   };
   return (
-    <li key={Math.random() * 10000}>
+    <li key={itemId}>
       <div className="book">
         <div className="book-content">
           <div className="book-info-section">
