@@ -59,7 +59,7 @@
 
 ### Live Demo <a name="live-demo"></a>
 
-- **[Live Demo](https://bookstore-react-app.onrender.com)**
+- **[Live Demo](https://bookstore-stage.onrender.com/)**
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
