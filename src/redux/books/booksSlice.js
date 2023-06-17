@@ -11,18 +11,18 @@ const initialState = {
 
 export const fetchBooks = createAsyncThunk('books/fetchBooks', () => (
   axios
-    .get(`${API_URL}/${APP_TOKEN}/books`)
+    .get(`${API_URL}${APP_TOKEN}/books`)
     .then((response) => response.data)
 ));
 
 export const createBook = createAsyncThunk('books/createBook', (book) => (
   axios
-    .post(`${API_URL}/${APP_TOKEN}/books`, book)
+    .post(`${API_URL}${APP_TOKEN}/books`, book)
     .then(() => book)
 ));
 export const deleteBook = createAsyncThunk('books/deleteBook', (id) => (
   axios
-    .delete(`${API_URL + APP_TOKEN}/books/${id}`)
+    .delete(`${API_URL}${APP_TOKEN}/books/${id}`)
     .then(() => id)
 ));
 
